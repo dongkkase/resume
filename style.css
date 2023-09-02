@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,span,th,td,legend {margin:0;padding:0;}
+fieldset,img,abbr,acronym{border:none;}
+fieldset{display:block;}
+ol,ul {list-style:none outside;}
+h1,h2,h3,h4,h5,h6,address,caption,cite,code,dfn,em,th,var {}
+
+*, :before, :after {box-sizing:border-box;word-break:keep-all;}
+
+label,a,button,input[type=radio],input[type=checkbox],select{cursor:pointer;}
+/* textarea,input[type=text]{cursor:pointer;} */
+input.calendar-date-birth,
+input.date{cursor: pointer;}
+button{margin:0;padding:0;border:0}
+
+input:disabled{background-color:#efefef !important}
+input:disabled:hover{border:1px solid #c5c9d2}
+input:focus{outline:none}
+caption{display:none}
+
+body{background:#efefef}
+#wrap{max-width:700px;margin:0 auto;padding-top:100px}
+h1{}
+h1>small{font-weight:100;}
+h2{padding-top:40px;color:#333}
+.box{border-top:1px solid #666;margin-top:10px;padding:20px 10px;background:#fff}
+.box:after{content:'';display:block;clear:both;}
+
+.box.info{}
+.box.info>.name{font-size:1.2em}
+.box.info>hr{border:0}
+.box.info>img{width:150px;float:left;margin-right:10px;}
+.box.info>strong{font-weight: 600;}
+.box.info>ul{display:inline}
+.box.info>ul>li{display:inline-block;margin:0 4px 4px 0;padding:2px 4px;color:#333;background:#e6e6e6;font-size:0.9em;border-radius: 3px;box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);}
+
+.row{width:calc(100% + 20px);margin-left:-10px;padding:30px 10px;color:#333;border-bottom:1px solid #edeef0}
+.row:last-child{border-bottom:0;padding-bottom:0}
+.row>.date{font-size:0.8em;}
+.row>.name{font-size:1.2em;font-weight:700}
+.row>.name>small{font-weight: 100;}
+.row>.dsc{padding:10px 0;color:#666}
+
+.box>ul.list{list-style-type:decimal;margin-left:40px;}
+.box>ul.list>li{}
+
+#footer{padding-bottom:100px;}
