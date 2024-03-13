@@ -1,0 +1,11 @@
+.popup-event-launching { z-index: 9998; position: fixed; left: 0; right: 0; top: 0; bottom: 0; width: 100%; margin: 0; border: 0; background-color: rgba(0, 0, 0, 0.3); }
+.popup-event-launching.hidden { display: none; }
+.popup-event-launching .popup-wrap { position: absolute; left: 50%; top: 50%; width: 630px; height: 474px; margin: -237px 0 0 -315px; background-color: #fff; }
+.popup-event-launching .popup-header { overflow: hidden; position: relative; height: 147px; padding-top: 147px; background: #f0f3f5 url("/content/images/text_user/resume/view/bg-popup-event-header.png") no-repeat 408px center; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.popup-event-launching .popup-header:before { content: ''; display: block; position: absolute; left: 49px; top: 45px; width: 282px; height: 63px; background: url("/content/images/text_user/resume/view/popup-event-header.png") no-repeat; }
+.popup-event-launching .popup-body { padding-top: 55px; text-align: center; }
+.popup-event-launching .popup-body .status { overflow: hidden; width: 424px; height: 40px; margin: 0 auto 19px; }
+.popup-event-launching .popup-body .status:before { content: ''; display: block; width: 424px; height: 40px; background: url("/content/images/text_user/resume/view/popup-event-status.png") no-repeat; }
+.popup-event-launching .popup-body .description { margin-bottom: 36px;font-size:20px;letter-spacing: -0.5px; line-height: 1.5; color: #666; }
+.popup-event-launching .popup-body .description em { color: #39f; }
+.popup-event-launching .popup-body .button-confirm { display: block; width: 238px; height: 60px; margin: 0 auto;font-size:26px;letter-spacing: -0.5px; font-weight: bold; color: #fff; background-color: #39f; }

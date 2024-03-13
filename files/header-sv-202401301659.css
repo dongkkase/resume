@@ -1,0 +1,14 @@
+@font-face {font-family: Pretendard;font-weight: 400;font-display: swap;src: local("Pretendard Regular"),url(/content/webfont/pretendard/woff2-subset/Pretendard-Regular.subset.woff2) format("woff2"),url(/content/webfont/pretendard/woff-subset/Pretendard-Regular.subset.woff) format("woff")}
+@font-face {font-family: Pretendard;font-weight: 600;font-display: swap;src: local("Pretendard SemiBold"),url(/content/webfont/pretendard/woff2-subset/Pretendard-SemiBold.subset.woff2) format("woff2"),url(/content/webfont/pretendard/woff-subset/Pretendard-SemiBold.subset.woff) format("woff")}
+@font-face {font-family: Pretendard;font-weight: 700;font-display: swap;src: local("Pretendard Bold"),url(/content/webfont/pretendard/woff2-subset/Pretendard-Bold.subset.woff2) format("woff2"),url(/content/webfont/pretendard/woff-subset/Pretendard-Bold.subset.woff) format("woff")}
+a, abbr, acronym, address, big, blockquote, body, button, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, input, ins, kbd, label, legend, li, object, ol, p, pre, q, samp, select, small, span, strike, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, tr, tt, ul, var{font-family :  'Pretendard',-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif;}
+
+
+.resumeHeader { overflow: hidden; width: 100%; height: 35px; margin-bottom: 50px; background-color: #fff; border-bottom: 1px solid #ececec; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.resumeHeader .container { position: relative; overflow: hidden; width: 1200px; height: 34px; margin: 0 auto; text-align: left; }
+.resumeHeader .logo { position: absolute; left: 0; top: 0; display: inline-block; margin-top: 2.5px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.resumeHeader .links { float: right; font-size: 0; }
+.resumeHeader .links .link { position: relative; display: inline-block; zoom: 1; height: 34px; margin-left: 11px; padding: 6px 0 0 12px; color: #666;font-size:12px;letter-spacing: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.resumeHeader .links .link:before { content: ''; display: block; position: absolute; left: 0; top: 10px; width: 1px; height: 11px; background-color: #ddd; }
+.resumeHeader .links .link:first-child { margin-left: 0; padding-left: 0; }
+.resumeHeader .links .link:first-child:before { display: none; }
