@@ -156,6 +156,8 @@ async function downloadNovel(title, episodeLinks, startEpisode) {
     const startingIndex = episodeLinks.length - startEpisode;
     let novelText = `${title}\n\nDownloaded with novel-dl,\nhttps://github.com/yeorinhieut/novel-dl\n\n`;
 
+    var duration_time = 3500;
+
     for (let i = startingIndex; i >= 0; i--) {
         const episodeUrl = episodeLinks[i];
         if (!episodeUrl.startsWith('https://booktoki')) continue;
@@ -181,9 +183,18 @@ async function downloadNovel(title, episodeLinks, startEpisode) {
 
         const elapsed = Date.now() - startTime;
         const remaining = (elapsed / progress * (100 - progress)) || 0;
-        progressLabel.textContent = `진행률: ${progress.toFixed(1)}% (남은 시간: ${Math.floor(remaining/60000)}분 ${Math.floor((remaining%60000)/1000)}초)`;
+        progressLabel.textContent = `page:${i} / 진행률: ${progress.toFixed(1)}% (남은 시간: ${Math.floor(remaining/60000)}분 ${Math.floor((remaining%60000)/1000)}초)`;
 
-        await new Promise(r => setTimeout(r, 3500 + Math.random() * 3500));
+        if (i % 10 === 0)
+        {
+            duration_time = 10000;
+        }
+        else
+        {
+            duration_time = 3500;
+        }
+
+        await new Promise(r => setTimeout(r, duration_time + Math.random() * duration_time));
     }
 
     document.body.removeChild(modal);
@@ -252,8 +263,7 @@ async function runCrawler() {
         return;
     }
 
-    const totalPages = prompt(`소설 목록의 페이지 수를 입력하세요.
-(1000화가 넘지 않는 경우 1, 1000화 이상부터 2~)`, '1');
+    const totalPages = prompt(`소설 목록의 페이지 수를 입력하세요. (1000화가 넘지 않는 경우 1, 1000화 이상부터 2~)`, '1');
 
     if (!totalPages || isNaN(totalPages)) {
         console.log('Invalid page number or user canceled the input.');
