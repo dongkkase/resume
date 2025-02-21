@@ -183,7 +183,7 @@ async function downloadNovel(title, episodeLinks, startEpisode) {
 
         const elapsed = Date.now() - startTime;
         const remaining = (elapsed / progress * (100 - progress)) || 0;
-        progressLabel.textContent = `page:${i} / 진행률: ${progress.toFixed(1)}% (남은 시간: ${Math.floor(remaining/60000)}분 ${Math.floor((remaining%60000)/1000)}초)`;
+        progressLabel.textContent = `<div style='font-size:2em'>page:${i}</div> / 진행률: ${progress.toFixed(1)}% (남은 시간: ${Math.floor(remaining/60000)}분 ${Math.floor((remaining%60000)/1000)}초)`;
 
         if (i % 10 === 0)
         {
